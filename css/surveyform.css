@@ -1,0 +1,151 @@
+:root {
+    --redberry-color: #FE3B1F;
+    --white-color: #ffffff;
+    --black-color: #454545;
+}
+
+body {
+    margin: 0;
+}
+
+.personal-information {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    padding: 0 117px;
+    height: 100%;
+}
+
+.personal-information form {
+    display: grid;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+}
+
+.information {
+    padding: 17px 57px;
+    width: 400px;
+    margin-bottom: 37px;
+}
+
+.about-page {
+    background: radial-gradient(50% 50% at 50% 50%, #0C0D0E 0%, #151718 73.44%);
+    position: fixed;
+    right: 0;
+    left: 50%;
+    height: 100%;
+    padding: 0px 0 0 177px;
+}
+
+.about-redberry {
+    position: static;
+    border: solid;
+    background-color: var(--black-color);
+    height: 100%;
+    width: 50%;
+}
+
+.text-corner {
+    font-size: 24px;
+    max-width: 567px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 200%;
+    margin-top: 90px;
+    color: var(--white-color);
+}
+
+h2 {
+    color: var(--redberry-color);
+    font-size: 64px;
+    font-family: 'Rowdies', cursive;
+    max-width: 716px;
+    font-weight: 400;
+    line-height: 79px;
+}
+
+
+/*hide form*/
+
+.none {
+    display: none;
+}
+
+
+/*show form*/
+
+.display {
+    display: block;
+}
+
+
+/* button positions */
+
+.slide-buttons {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 173px;
+    left: 308px;
+}
+
+.round-dots {
+    border: none;
+    margin-right: 18px;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    background-color: var(--redberry-color);
+    opacity: 0.1;
+}
+
+.active {
+    opacity: 1;
+}
+
+.slide-buttons img {
+    margin-right: 18px;
+}
+
+
+/* button for add programming skills */
+
+#programming-languages {
+    width: 201px;
+    /* display: grid; */
+    /* justify-items: start; */
+    margin: 0 0 56px 20rem;
+    height: 32px;
+    align-items: center;
+    background-color: var(--redberry-color);
+    border: none;
+    color: var(--white-color);
+}
+
+
+/* Covid (page3) */
+
+.covid-questions {
+    display: block !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.covid-questions p {
+    margin-top: 43px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url(../images/calendar.png) no-repeat;
+}
+
+.page3 {
+    top: 1100px;
+    padding-bottom: 64px;
+}
+
+.covid-radio-questions {
+    margin-bottom: 17px;
+}

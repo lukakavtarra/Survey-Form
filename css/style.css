@@ -1,0 +1,55 @@
+:root {
+    --redberry-color: #FE3B1F;
+    --white-color: #ffffff;
+}
+
+* {
+    margin: 0 auto;
+}
+
+body {
+    margin-top: 175px;
+    background-color: black;
+    background-image: url(../images/stars.png);
+}
+
+h1 {
+    font-family: 'Rowdies', cursive;
+    color: var(--redberry-color);
+    text-align: center;
+    font-size: 96px;
+    font-weight: 400;
+}
+
+button {
+    border: none;
+    width: 395px;
+    height: 79px;
+    background-color: var(--redberry-color);
+    border-radius: 50px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white-color);
+    font-size: 24px;
+    position: relative;
+    left: 754px;
+    margin-top: 105px;
+}
+
+#submited {
+    text-align: center;
+    margin-top: 18px;
+}
+
+#submited a {
+    color: var(--white-color);
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    position: absolute;
+    bottom: 0;
+    left: 661px;
+}
