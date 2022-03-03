@@ -16,7 +16,7 @@ body {
     height: 100%;
 }
 
-.personal-information form {
+.personal-information .what-about-you {
     display: grid;
     justify-content: space-around;
     margin-top: 100px;
@@ -24,12 +24,14 @@ body {
 
 ::-webkit-input-placeholder {
     font-style: italic;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .information {
     padding: 17px 57px;
     width: 400px;
     margin-bottom: 37px;
+    display: block;
 }
 
 .about-page {
@@ -106,6 +108,13 @@ h2 {
     opacity: 1;
 }
 
+.round-dots:hover,
+.next:hover,
+.prev:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
 .slide-buttons img {
     margin-right: 18px;
 }
@@ -115,8 +124,6 @@ h2 {
 
 #programming-languages {
     width: 201px;
-    /* display: grid; */
-    /* justify-items: start; */
     margin: 0 0 56px 20rem;
     height: 32px;
     align-items: center;
@@ -148,4 +155,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .covid-radio-questions {
     margin-bottom: 17px;
+}
+
+
+/* devtalks */
+
+textarea {
+    resize: none;
+    padding: 24px 23px;
+    width: 512px;
+}
+
+textarea[name=devtalk] {
+    height: 98px;
+}
+
+.about-you select {
+    margin: 10px;
 }
