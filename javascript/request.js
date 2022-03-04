@@ -1,30 +1,19 @@
-// const request = new XMLHttpRequest();
-// request.open("GET", "https://bootcamp-2022.devtest.ge/api/skills");
-// request.send();
-// request.onload = () => {
-//     console.log(request);
-//     if (request.status === 200) {
-//         console.log(JSON.parse(request.response));
-//     } else {
-//         console.log(request)
-//         console.log('error ${request.status}')
-//     }
-// }
-
-
-fetch("https://bootcamp-2022.devtest.ge/api/skills")
-    .then(response => {
+fetch('https://bootcamp-2022.devtest.ge/api/skills')
+    .then(function (response) {
         return response.json();
-    }).then(json => {
-        console.log(json);
-
     })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+    });
 
-async function getUsers() {
-    let response = await fetch("https://bootcamp-2022.devtest.ge/api/skills");
-    let data = await response.json();
-    return data;
+function appendData(data) {
+    var mainContainer = document.getElementById("language-data ");
+    for (var i = 0; i < data.length; i++) {
+        var div = document.createElement("option");
+        div.innerHTML = data[i].title;
+        mainContainer.appendChild(div);
+    }
 }
-getUsers().then(response => {
-    console.log(response)
-})
