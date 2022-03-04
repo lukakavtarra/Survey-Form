@@ -16,10 +16,10 @@ body {
     height: 100%;
 }
 
-.personal-information .what-about-you {
-    display: grid;
-    justify-content: space-around;
-    margin-top: 100px;
+.coordinates input {
+    left: 70px;
+    top: 30px;
+    position: relative;
 }
 
 ::-webkit-input-placeholder {
@@ -68,22 +68,16 @@ h2 {
     font-weight: 400;
     line-height: 79px;
 }
-
-
 /*hide form*/
 
 .none {
     display: none;
 }
-
-
 /*show form*/
 
 .display {
     display: block;
 }
-
-
 /* button positions */
 
 .slide-buttons {
@@ -112,14 +106,12 @@ h2 {
 .next:hover,
 .prev:hover {
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .slide-buttons img {
     margin-right: 18px;
 }
-
-
 /* button for add programming skills */
 
 #programming-languages {
@@ -131,8 +123,6 @@ h2 {
     border: none;
     color: var(--white-color);
 }
-
-
 /* Covid (page3) */
 
 .covid-questions {
@@ -140,24 +130,26 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-.covid-questions p {
-    margin-top: 43px;
-}
+    .covid-questions p {
+        margin-top: 43px;
+    }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
     background: url(../images/calendar.png) no-repeat;
 }
 
 .page3 {
-    top: 1100px;
-    padding-bottom: 64px;
+    position: relative;
+    margin-top: 30px;
+    bottom: 30px;
+    left: 191px;
+    top: 129px;
+    margin-bottom: 50px;
 }
 
 .covid-radio-questions {
     margin-bottom: 17px;
 }
-
-
 /* devtalks */
 
 textarea {
@@ -166,10 +158,46 @@ textarea {
     width: 512px;
 }
 
-textarea[name=devtalk] {
-    height: 98px;
-}
+    textarea[name=devtalk] {
+        height: 98px;
+    }
 
 .about-you select {
     margin: 10px;
+}
+
+.submiting span {
+    position: absolute;
+    left: 900px;
+    top: 572px;
+    color: white;
+    font-size: 28px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.submiting input {
+    position: absolute;
+    border-radius: 50px;
+    border: none;
+    height: 79px;
+    width: 395px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    background-color: #FE3B1F;
+    display: block;
+    top: 458px;
+    left: 758px;
+    font-size: 36px;
+    color: white;
+}
+
+.submiting {
+    position: absolute;
+    background: #454545;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-family: 'Montserrat', sans-serif;
 }
