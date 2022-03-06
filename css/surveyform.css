@@ -123,6 +123,43 @@ h2 {
     border: none;
     color: var(--white-color);
 }
+/* added skills */
+
+.language-set {
+    padding: 17px 10px;
+    width: 500px;
+    margin-bottom: 37px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    border: 0.1px solid;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* delete button */
+
+.delete-button {
+    border: none;
+    background: none;
+}
+
+    .delete-button:hover {
+        cursor: pointer;
+    }
+/* hide number arrows */
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
 /* Covid (page3) */
 
 .covid-questions {
@@ -200,4 +237,8 @@ textarea {
     bottom: 0;
     right: 0;
     font-family: 'Montserrat', sans-serif;
+}
+
+.selected {
+    background-color: var(--redberry-color);
 }
