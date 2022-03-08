@@ -1,5 +1,5 @@
 :root {
-    --redberry-color: #FE3B1F;
+    --redberry-color: #fe3b1f;
     --white-color: #ffffff;
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-    font-family: 'Rowdies', cursive;
+    font-family: "Rowdies", cursive;
     color: var(--redberry-color);
     text-align: center;
     font-size: 96px;
@@ -28,12 +28,17 @@ button {
     background-color: var(--redberry-color);
     border-radius: 50px;
     align-items: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: var(--white-color);
     font-size: 24px;
     position: relative;
     left: 754px;
     margin-top: 105px;
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
 }
 
 #submited {
@@ -44,7 +49,7 @@ button {
 #submited a {
     color: var(--white-color);
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
 
@@ -52,4 +57,5 @@ img {
     position: absolute;
     bottom: 0;
     left: 661px;
+    z-index: -1;
 }
