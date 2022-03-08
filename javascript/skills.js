@@ -1,8 +1,8 @@
 function addSkills() {
 
 
-    var chosedSkill = document.getElementById("language-data ").value;
-    var experience = document.getElementById("experience ").value
+    let chosedSkill = document.getElementById("language-data ").value;
+    let experience = document.getElementById("experience ").value
     if (chosedSkill !== '' && experience !== '') {
         // let div = document.getElementById("here").appendChild('p')
         let div = document.createElement('p');

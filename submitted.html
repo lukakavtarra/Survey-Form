@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submitted</title>
+    <style>
+        html {
+            background-color: #454545;
+        }
+        
+        body {
+            padding: 10rem 15rem;
+        }
+        
+        .submitted {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            background-color: white;
+            width: 100%;
+            padding: 10rem 0rem;
+        }
+        
+        .submitted-personal-information {
+            grid-area: 1 / 1 / 2 / 2;
+        }
+        
+        .submitted-skillset {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+        
+        .submitted-covid-situation {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        
+        .insigts {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Submited Applications</h1>
+
+    <div class="submitted">
+        <div class="submitted-personal-information">
+            <h2>Personal information</h2>
+            <p>First Name <span></span></p>
+            <p>Last Name <span></span></p>
+            <p>E Mail <span></span></p>
+            <p>Phone <span></span></p>
+        </div>
+        <div class="submitted-skillset">
+            <h2>Skillset</h2>
+        </div>
+        <div class="submitted-covid-situation">
+            <h2>Coivd Situation</h2>
+            <p>how would you prefer to work?</p>
+            <p class="work-active"></p>
+            <p>did you have Covid 19?</p>
+            <p class="covid-activ"> </p>
+            <p>when did you have covid 19?</p>
+            <p class="covid-date"></p>
+            <p>have you been vaccinated?</p>
+            <p class="vaccine-date"></p>
+        </div>
+        <div class="insigts">
+            <h2>insights</h2>
+            <p>Would you attend and maybe also organize your own </p>
+            <p class="attend"></p>
+            <p>what would you speak about at Devtalk?</p>
+            <p class="Devtalk-textarea"></p>
+            <p>Tell us something special</p>
+            <p class="special-textarea"></p>
+        </div>
+    </div>
+</body>
+
+</html>

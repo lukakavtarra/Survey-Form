@@ -1,5 +1,5 @@
 :root {
-    --redberry-color: #FE3B1F;
+    --redberry-color: #fe3b1f;
     --white-color: #ffffff;
     --black-color: #454545;
 }
@@ -24,7 +24,7 @@ body {
 
 ::-webkit-input-placeholder {
     font-style: italic;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .information {
@@ -35,7 +35,7 @@ body {
 }
 
 .about-page {
-    background: radial-gradient(50% 50% at 50% 50%, #0C0D0E 0%, #151718 73.44%);
+    background: radial-gradient(50% 50% at 50% 50%, #0c0d0e 0%, #151718 73.44%);
     position: fixed;
     right: 0;
     left: 50%;
@@ -54,7 +54,7 @@ body {
 .text-corner {
     font-size: 24px;
     max-width: 567px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 200%;
     margin-top: 90px;
     color: var(--white-color);
@@ -63,21 +63,27 @@ body {
 h2 {
     color: var(--redberry-color);
     font-size: 64px;
-    font-family: 'Rowdies', cursive;
+    font-family: "Rowdies", cursive;
     max-width: 716px;
     font-weight: 400;
     line-height: 79px;
 }
+
+
 /*hide form*/
 
 .none {
     display: none;
 }
+
+
 /*show form*/
 
 .display {
     display: block;
 }
+
+
 /* button positions */
 
 .slide-buttons {
@@ -112,17 +118,25 @@ h2 {
 .slide-buttons img {
     margin-right: 18px;
 }
+
+
 /* button for add programming skills */
 
 #programming-languages {
-    width: 201px;
-    margin: 0 0 56px 20rem;
-    height: 32px;
+    margin: 0 197px 56px 15rem;
     align-items: center;
     background-color: var(--redberry-color);
     border: none;
     color: var(--white-color);
+    font-family: "Montserrat", sans-serif;
+    padding: 1rem;
 }
+
+#programming-languages:hover {
+    cursor: pointer;
+}
+
+
 /* added skills */
 
 .language-set {
@@ -130,13 +144,15 @@ h2 {
     width: 500px;
     margin-bottom: 37px;
     display: block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: italic;
     border: 0.1px solid;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
+
+
 /* delete button */
 
 .delete-button {
@@ -144,10 +160,14 @@ h2 {
     background: none;
 }
 
-    .delete-button:hover {
-        cursor: pointer;
-    }
+.delete-button:hover {
+    cursor: pointer;
+}
+
+
 /* hide number arrows */
+
+
 /* Chrome, Safari, Edge, Opera */
 
 input::-webkit-outer-spin-button,
@@ -155,24 +175,37 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+
 /* Firefox */
 
-input[type=number] {
+input[type="number"] {
     -moz-appearance: textfield;
 }
+
+
 /* Covid (page3) */
 
 .covid-questions {
     display: block !important;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
-    .covid-questions p {
-        margin-top: 43px;
-    }
+.covid-questions p {
+    margin-top: 43px;
+}
 
 input[type="date"]::-webkit-calendar-picker-indicator {
     background: url(../images/calendar.png) no-repeat;
+}
+
+.page2 {
+    position: relative;
+    margin-top: 30px;
+    bottom: 30px;
+    left: 191px;
+    top: 293px;
+    margin-bottom: 50px;
 }
 
 .page3 {
@@ -184,9 +217,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 50px;
 }
 
+.page4 {
+    position: relative;
+    margin-top: 30px;
+    bottom: 30px;
+    left: 191px;
+    top: 114px;
+    margin-bottom: 50px;
+}
+
 .covid-radio-questions {
     margin-bottom: 17px;
 }
+
+
 /* devtalks */
 
 textarea {
@@ -195,12 +239,26 @@ textarea {
     width: 512px;
 }
 
-    textarea[name=devtalk] {
-        height: 98px;
-    }
+textarea[name="devtalk"] {
+    height: 98px;
+}
 
 .about-you select {
     margin: 10px;
+}
+
+.about-you-header {
+    margin-bottom: 170px;
+}
+
+.about-you p {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 70px;
+}
+
+.about-you input {
+    margin: 15px 0;
 }
 
 .submiting span {
@@ -219,9 +277,9 @@ textarea {
     border: none;
     height: 79px;
     width: 395px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     cursor: pointer;
-    background-color: #FE3B1F;
+    background-color: #fe3b1f;
     display: block;
     top: 458px;
     left: 758px;
@@ -236,7 +294,7 @@ textarea {
     left: 0;
     bottom: 0;
     right: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .selected {

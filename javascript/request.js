@@ -1,18 +1,12 @@
 fetch('https://bootcamp-2022.devtest.ge/api/skills')
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        appendData(data);
-    })
-    .catch(function (err) {
-        console.log('error: ' + err);
-    });
+    .then((response) => response.json())
+    .then((data) => appendData(data))
+    .catch((err) => console.log('error: ' + err))
 
 function appendData(data) {
-    var mainContainer = document.getElementById("language-data ");
-    for (var i = 0; i < data.length; i++) {
-        var div = document.createElement("option");
+    let mainContainer = document.getElementById("language-data ");
+    for (let i = 0; i < data.length; i++) {
+        let div = document.createElement("option");
         div.innerHTML = data[i].title;
         mainContainer.appendChild(div);
     }
