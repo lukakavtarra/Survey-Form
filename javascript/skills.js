@@ -12,7 +12,7 @@ function addSkills() {
         div.appendChild(text);
         document.getElementById("skillset").appendChild(div);
         // add remove button
-        div.innerHTML += ' <button class="delete-button" onclick="Delete(this);"><img src="images/remove.png"</button>';
+        div.innerHTML += ' <button class="delete-button" onclick="Delete(this);"><img src="images/Remove.png"</button>';
 
     }
 }
