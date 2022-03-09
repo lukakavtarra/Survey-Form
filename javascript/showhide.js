@@ -1,23 +1,16 @@
-function vaccineDateHide() {
-    let n = document.getElementById("vaccine-date");
-    n.style.display = "none";
-}
+// VACCINE DATE
+let vaccineDateHide = () =>
+    (document.getElementById("vaccine-date").style.display = "none");
 
-function vaccineDateShow() {
-    let b = document.getElementById("vaccine-date");
-    b.style.display = "block";
-}
+let vaccineDateShow = () =>
+    (document.getElementById("vaccine-date").style.display = "block");
+// COVID INFECTION DATE
+let covidDatehide = () =>
+    (document.getElementById("covid-date").style.display = "none");
 
-function covidDatehide() {
-    let n = document.getElementById("covid-date");
-    n.style.display = "none";
-}
-
-function covidDateShow() {
-    let b = document.getElementById("covid-date");
-    b.style.display = "block";
-}
-
+let covidDateShow = () =>
+    (document.getElementById("covid-date").style.display = "block");
+// DEVTALK
 function devTalkHide() {
     document.getElementById("devTalk").style.display = "none";
     document.getElementById("devTalkParagraph").style.display = "none";
